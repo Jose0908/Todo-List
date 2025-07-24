@@ -1,59 +1,113 @@
+
 # Nada
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Este projeto foi desenvolvido como parte do programa **CAIXAVERSO**, uma iniciativa da **ADA** (Academia do Agilismo) em parceria com a **CAIXA Econômica Federal**.
 
-## Development server
+O sistema é uma aplicação Angular voltada para o gerenciamento de tarefas simples, utilizando integração com APIs REST para fins de aprendizado e prática de desenvolvimento front-end.
 
-To start a local development server, run:
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- [Angular CLI](https://github.com/angular/angular-cli) versão `19.2.15`
+- [JSON Server](https://github.com/typicode/json-server) (para simular backend local)
+- [RxJS](https://rxjs.dev/)
+- TypeScript
+
+---
+
+## ⚙️ Pré-requisitos
+
+Antes de rodar o projeto, você precisa ter instalado:
+
+- [Node.js](https://nodejs.org/) (versão 18.x ou superior recomendada)
+- [npm](https://www.npmjs.com/) (gerenciador de pacotes)
+- Angular CLI:
 
 ```bash
-ng serve
+npm install -g @angular/cli
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 📦 Instalação
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Clone o repositório e instale as dependências:
 
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+
+## ▶️ Como rodar o projeto
+
+O projeto possui dois servidores que podem ser iniciados com um único comando:
 
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
+Isso irá:
+- Iniciar o **frontend Angular** em `http://localhost:4200`
+- Iniciar o **servidor JSON local** (caso esteja usando o `json-server`) em `http://localhost:8080`
 
-To build the project run:
+Ou, para rodar apenas o Angular:
+
+```bash
+npm run start:front
+```
+
+---
+
+## 🧪 Testes
+
+### Testes unitários com Karma:
+
+```bash
+npm test
+```
+
+### Testes e2e (end-to-end)
+
+O Angular 19 não inclui mais o framework de e2e por padrão. Você pode usar Cypress, Playwright ou outro framework à sua escolha.
+
+---
+
+## 🛠️ Comandos úteis
+
+### Gerar um novo componente:
+
+```bash
+ng generate component nome-do-componente
+```
+
+### Gerar um novo service:
+
+```bash
+ng generate service nome-do-service
+```
+
+### Build para produção:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 💡 Recursos adicionais
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- [Documentação Angular](https://angular.dev/)
+- [Documentação do Angular CLI](https://angular.dev/tools/cli)
+- [JSON Server](https://github.com/typicode/json-server)
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 📢 Sobre o Programa CAIXAVERSO
 
-For end-to-end (e2e) testing, run:
+O **CAIXAVERSO** é um programa de formação promovido pela **CAIXA Econômica Federal**, em parceria com a **ADA**, com foco em capacitar talentos em tecnologia com ênfase em desenvolvimento web moderno.
 
-```bash
-ng e2e
-```
+Este projeto é parte das atividades práticas do programa.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
