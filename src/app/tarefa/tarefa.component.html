@@ -1,0 +1,33 @@
+<div class="tarefa">
+  <div class="tarefa-conteudo">
+    <input *ngIf="!modoEdicao" type="checkbox" [(ngModel)]="tarefaConcluida" (click)="marcarComoConcluida()" />
+
+    <p *ngIf="!modoEdicao" [class.concluida]="tarefaConcluida">
+      {{ tarefa.descricao }}
+    </p>
+
+    <input
+      *ngIf="modoEdicao"
+      type="text"
+      [(ngModel)]="novaDescricao"
+      name="descricao"
+      [ngClass]="{'campo-invalido': descricaoInvalida}"
+    />
+  </div>
+
+  <div class="botoes">
+    <button *ngIf="!modoEdicao && !tarefaConcluida" (click)="alterarModoEdicao()">
+      <img src="assets/editar.png" alt="Editar Tarefa"/>
+    </button>
+
+    <ng-container *ngIf="modoEdicao">
+      <button (click)="salvarTarefa()">
+        <img src="assets/salvar.png" alt="Salvar Tarefa"/>
+      </button>
+
+      <button (click)="removerTarefaEmitter()">
+        <img src="assets/cancelar.png" alt="Cancelar Edição"/>
+      </button>
+    </ng-container>
+  </div>
+</div>

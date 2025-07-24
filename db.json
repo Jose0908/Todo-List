@@ -1,0 +1,15 @@
+{
+  "tarefas": [
+    {
+      "id": "68815f11e619f603e8de0d55",
+      "descricao": "Sorteio",
+      "dataCriacao": "2025-07-23T22:15:46.726Z",
+      "dataConclusao": "2025-07-23T22:15:49.249Z"
+    },
+    {
+      "descricao": "Trabalhar",
+      "dataCriacao": "2025-07-23T22:29:35.923Z",
+      "id": "6881624ee619f603e8de0d57"
+    }
+  ]
+}

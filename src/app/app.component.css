@@ -1,0 +1,81 @@
+h1,
+p {
+    font-size: 40px;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarefas-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tarefas {
+    border-radius: 15px;
+    padding: 30px;
+    background-color: white;
+    justify-content: center;
+}
+
+.tarefas h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.form-tarefa {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+button, input {
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background-color: rgb(245, 89, 89);
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    background-color: #EDEEF0;
+    margin-right: 10px;
+}
+
+.campo-invalido {
+  border: 1px solid red;
+}
+
+.erro-validacao p {
+  color: red;
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+.aviso-tarefas {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 5px;
+}
+
+
+.aviso-tarefa {
+    font-size: 14px;
+    color: #888;
+    text-align: end;
+}
