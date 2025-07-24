@@ -16,7 +16,7 @@ export class AppComponent {
 
   constructor(private fb: FormBuilder, private tarefaService: TarefaService) {
     this.formTarefa = this.fb.group({
-      descricao: ['', [Validators.minLength(3), Validators.maxLength(10)]]
+      descricao: ['', [Validators.minLength(3), Validators.maxLength(30)]]
     });
   }
 
